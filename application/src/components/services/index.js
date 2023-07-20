@@ -20,7 +20,7 @@ const Services = () => {
           <ServicesIcon src={Icon2} />
           <ServicesH2>Vulnerability Management</ServicesH2>
           <ServicesP>
-            Donec nec maximus sapien. Aenean edgfbfgbfficitur urna sed felis varius, 
+            Donec nec maximus sapien. Aenean fergal urna sed felis varius, 
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
