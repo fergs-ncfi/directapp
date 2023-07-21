@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div `
     width: 100%;
-    min-height: 700px;    
+    min-height: 350px;    
     justify-content: center;  
     display: flex;
     color: #5EC7CD;
@@ -20,7 +20,7 @@ export const InfoWrapper = styled.div `
 
 export const Title = styled.h1 `
     color: #5EC7CD;    
-    font-weight: 900;
+    font-weight: 1000;
 
 
 `

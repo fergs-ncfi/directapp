@@ -25,7 +25,13 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <h1 className="h1-hero">Finding the Possible In Impossible</h1>
+        <h1 className="h1-hero">
+          <span class="h1.text">Finding the </span>
+          <span class="text-info">Possible </span>
+          <span class="inthe">In Im</span>
+          <span class="text-info">possible</span>
+        </h1>
+
         <p className="hero-text"> Cyber Security Solutions and Services Built To Meet The Needs Of Your Organisation</p>
         <HeroBtnWrapper>
       

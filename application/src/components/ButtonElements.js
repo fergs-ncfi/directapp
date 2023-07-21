@@ -77,10 +77,10 @@ export const ButtonBasic = styled(LinkS)`
 
 export const ButtonBasicInv = styled(LinkS)`
     border-radius: 50px;
-    background: ${({primary}) => (primary ? '#B05FFD' : '#010606')};
+    background: ${({primary}) => (primary ? '#0189A1' : '#FFF')};
     white-space: nowrap;
     padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-    color: ${({dark}) => (dark ? '#010606' : '#fff')};
+    color: ${({white}) => (white ? '#0189A1' : '#fff')};
     font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
     outline: none;
     border: none;
@@ -94,8 +94,8 @@ export const ButtonBasicInv = styled(LinkS)`
     font-weight: 600;
 
     &:hover {
-        background: #000;
-        color: #fff;
+        background: #FFF;
+        color: #0189A1;
     }
 
 `

@@ -23,6 +23,9 @@ const Signin = () => {
           <p className="center-align">
             Forgot your password? <a href="/">Reset here</a>
           </p>
+          <p className="center-align">
+            <a href="/">Close</a>
+          </p>
         </div>
       </SigninWrapper>
     </SigninContainer>

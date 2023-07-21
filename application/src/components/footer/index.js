@@ -25,13 +25,13 @@ const Footer = () => {
           </div>
           <div className="col-lg-3 col-sm-6">
             <FooterH2>Follow Us</FooterH2>
-            <FooterLink href="#">Facebook</FooterLink>
-            <FooterLink href="#">LinkedIn</FooterLink>
+            <FooterLink href="https://www.facebook.com/ncfi.fb" target="_blank">Facebook</FooterLink>
+            <FooterLink href="https://www.linkedin.com/company/92817447" target="_blank">LinkedIn</FooterLink>
           </div>
         </div>
         <div className="row">
           <div className="col-12 mt-5 ">
-            <h1 className="logo-text gray-text center-align">- N.C.F.I -</h1>
+            <h1 className="logo-text gray-text center-align text-muted">- NCFI -</h1>
           </div>
         </div>
       </FooterWrapper>

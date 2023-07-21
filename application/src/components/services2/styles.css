@@ -1,0 +1,16 @@
+/* styles.css */
+a {
+    text-decoration: none;
+    color:black;
+    align-items: center;
+  }
+  
+  /* Align the image in Services2Icon */
+.Services2Icon {
+    display: block;
+    margin: 0 auto;
+  }
+
+  a:hover {
+    color: black;
+  }

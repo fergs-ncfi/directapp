@@ -15,7 +15,8 @@ export const FooterWrapper = styled.div`
 
 export const FooterH2 = styled.h2`
     font-size: 1.3rem;
-    color: white;
+    color: #57DFF7;
+    color: info;
     font-weight: 500;
     margin-bottom: 30px;
 
@@ -29,7 +30,7 @@ export const FooterLink = styled.a`
     transition: all 0.3s;
 
     &:hover {
-        color: #5EC7CD;
+        color: #57DFF7;
     }
 
 `

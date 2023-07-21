@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 export const InfoContainer = styled.div `
     width: 100%;
-    min-height: 700px;    
+    min-height: 500px;    
+    height: 500px;
     justify-content: center;  
     display: flex;
 

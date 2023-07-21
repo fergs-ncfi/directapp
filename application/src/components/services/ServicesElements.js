@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
 export const ServicesContainer = styled.div`
-    min-height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: #010606;
-    padding: 50px 0;
+min-height: 800px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: #010606;
+padding: 50px 0;
 
-    @media screen and (max-width: 768px) {
-        min-height: 1100px;
-    }
+@media screen and (max-width: 768px) {
+    min-height: 1100px;
+}
 
-    @media screen and (max-width: 480px) {
-        min-height: 1300px;
-    }
+@media screen and (max-width: 480px) {
+    min-height: 1300px;
+}
 
 `
 
@@ -55,6 +55,9 @@ export const ServicesCard = styled.div`
 
     &:hover {
         transform: scale(1.02);
+        background: #57DFF7;
+        color: #FFFFFF;
+        font-size: 3.5rem; 
     }
 
 `
@@ -68,7 +71,7 @@ export const ServicesIcon = styled.img`
 
 export const ServicesH1 = styled.h1`
     font-size: 2.5rem;
-    color: #5EC7CD;
+    color: #0DCAF0;
     margin-bottom: 64px;
 
     @media screen and (max-width: 480px) {
@@ -78,12 +81,17 @@ export const ServicesH1 = styled.h1`
 `
 
 export const ServicesH2 = styled.h2`
-    font-size: 1.2rem;
-    color: #0189A1;
-    margin-bottom: 10px;
-    font-weight: 900;
-    text-align: center;
-    
+font-size: 1.2rem;
+color: #0189A1;
+margin-bottom: 10px;
+font-weight: 900;
+text-align: center;
+&:hover {
+    transform: scale(1.22);
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block
+}
 `
 
 export const ServicesP = styled.p`

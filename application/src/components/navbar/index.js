@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import {
   Nav,
   NavbarContainer,
@@ -39,23 +40,37 @@ export const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">Home</NavLinks>
+            <NavLinks onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+    Home
+  </NavLinks>
             </NavItem>
+            
             <NavItem>
-              <NavLinks to="discover">Services</NavLinks>
+              <NavLinks to="about">About</NavLinks>
             </NavItem>
+
             <NavItem>
-              <NavLinks to="services">Insights</NavLinks>
+              <NavLinks to="services">Services</NavLinks>
             </NavItem>
+
             <NavItem>
-              <NavLinks to="signup">About</NavLinks>
+              <NavLinks to="discover">Insights</NavLinks>
             </NavItem>
+
+            <NavItem>
+              <Link to="/Blogs">Blogs</Link>
+            </NavItem>
+
           </NavMenu>
+
           <NavBtn>
-            <NavBtnLink to="/signin">Contact Us</NavBtnLink>
+            <NavBtnLink to="/contact-form">Contact Us</NavBtnLink>
           </NavBtn>
+          
         </NavbarContainer>
       </Nav>
+      
     </>
   );
+  
 };

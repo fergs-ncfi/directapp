@@ -5,9 +5,10 @@ import { Navbar } from "./../components/navbar";
 import { Sidebar } from "./../components/sidebar";
 
 import Image1 from "../images/design-notes.svg";
-import Image2 from "../images/space.svg";
+import Image2 from "../images/allsec12.svg";
 import InfoSectionLight from "../components/infoSectionLight";
 import Services from "../components/services";
+import Services2 from "../components/services2";
 import Footer from "../components/footer";
 
 export const Home = () => {
@@ -26,20 +27,23 @@ export const Home = () => {
         image={Image1}
         id="about"
         subtitle=" "
-        title="About NCFI:"
-        text="Our mission is to ensure the continued security of our clients by recognising the challenges they face and building leading solutions to mitigate those risks. With a focus on innovation, collaboration, and client satisfaction, we are committed to delivering world-class security solutions that enable our clients to operate with confidence and peace of mind."
+        title="About NCFI-Guard:"
+        text="NCFI-Guard is proudly part of the NCFI group with a specific focus on cyber security services. 
+        Our mission is to ensure the continued security of our clients by recognising the challenges they face and building leading solutions to mitigate those risks. With a focus on innovation, collaboration, and client satisfaction, we are committed to delivering world-class security solutions that enable our clients to operate with confidence and peace of mind."
         btnText="Contact Us"
       />
       <Services />
       <InfoSectionLight
         image={Image2}
         id="discover"
-        subtitle="Morbi iaculis enim"
-        title="In hac habitasse"
-        text="Phasellus porta sagittis sapien. Nam quis odio eu libero tempus rutrum. Suspendisse nec eros eget ex cursus rhoncus. Proin at velit quis ante pretium porta. Quisque pulvinar, elit et tincidunt ultricies, mauris odio luctus risus, vitae auctor elit risus a tortor. Nunc pulvinar purus id est rutrum vulputate. Mauris venenatis lectus vel nisi semper scelerisque."
-        btnText="Explore"
+        subtitle=" "
+        title="Unsure Where To Start ?"
+        text="Ever felt like you should be doing more in terms of cyber security but not sure where to start and feel that “Industry Leaders” are not exactly ‘leading’…...         We built a no-nonsense guide to security that’s linked to realistic solutions, services and support which can help beginners to seasons professionals"
+        btnText="Find Out More"
       />
-      <Footer />
+      <Services2 
+      id="latestnews"
+      />
     </>
   );
 };
