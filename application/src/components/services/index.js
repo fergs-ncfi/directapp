@@ -7,6 +7,8 @@ import Icon4 from "../../images/EmailSecurity1.svg"
 import Icon5 from "../../images/Consultancy.svg"
 import Icon6 from "../../images/SIEM1.svg"
 
+document.body.style.backgroundColor = "#000116";
+
 const Services = () => {
   return (
     <ServicesContainer id="services">

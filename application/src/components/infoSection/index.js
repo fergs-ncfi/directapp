@@ -4,6 +4,8 @@ import "../../App.css";
 import { InfoContainer, InfoWrapper, Subtitle, Title } from "./InfoElements";
 import { ButtonBasic } from "../ButtonElements";
 
+document.body.style.backgroundColor = "#000116";
+
 export const InfoSection = ({ id, title, subtitle, text, image, btnText }) => {
   return (
     <>

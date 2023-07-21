@@ -32,7 +32,7 @@ const HeroSection = () => {
           <span class="text-info">possible</span>
         </h1>
 
-        <p className="hero-text"> Cyber Security Solutions and Services Built To Meet The Needs Of Your Organisation</p>
+        <p className="hero-text"> Cyber Security Solutions and Services Built To Meet The Needs Of Your Business</p>
         <HeroBtnWrapper>
       
         </HeroBtnWrapper>

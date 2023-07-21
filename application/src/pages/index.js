@@ -11,6 +11,8 @@ import Services from "../components/services";
 import Services2 from "../components/services2";
 import Footer from "../components/footer";
 
+document.body.style.backgroundColor = "#000116";
+
 export const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
 
