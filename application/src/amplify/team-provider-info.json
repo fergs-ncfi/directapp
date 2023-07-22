@@ -1,0 +1,44 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ncfi-dev-215024-authRole",
+      "UnauthRoleArn": "arn:aws:iam::946995367830:role/amplify-ncfi-dev-215024-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::946995367830:role/amplify-ncfi-dev-215024-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-ncfi-dev-215024-deployment",
+      "UnauthRoleName": "amplify-ncfi-dev-215024-unauthRole",
+      "StackName": "amplify-ncfi-dev-215024",
+      "StackId": "arn:aws:cloudformation:us-east-1:946995367830:stack/amplify-ncfi-dev-215024/37fe0db0-2808-11ee-8578-0a38408af2b7",
+      "AmplifyAppId": "dnc20ghzt69wx"
+    },
+    "categories": {
+      "function": {
+        "ncfilambda": {}
+      }
+    }
+  },
+  "alpha": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-ncfi-alpha-215906-authRole",
+      "UnauthRoleArn": "arn:aws:iam::946995367830:role/amplify-ncfi-alpha-215906-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::946995367830:role/amplify-ncfi-alpha-215906-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-ncfi-alpha-215906-deployment",
+      "UnauthRoleName": "amplify-ncfi-alpha-215906-unauthRole",
+      "StackName": "amplify-ncfi-alpha-215906",
+      "StackId": "arn:aws:cloudformation:eu-north-1:946995367830:stack/amplify-ncfi-alpha-215906/6ec476d0-2809-11ee-a32f-0a0735b9ccc4",
+      "AmplifyAppId": "d2zshr8fari762"
+    },
+    "categories": {
+      "function": {
+        "ncfilambda": {}
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d2zshr8fari762",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "paths": {
+    "/src": {
+      "name": "/src",
+      "lambdaFunction": "ncfilambda",
+      "permissions": {
+        "setting": "open"
+      }
+    },
+    "/page": {
+      "name": "/page",
+      "lambdaFunction": "ncfilambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
