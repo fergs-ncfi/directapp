@@ -26,7 +26,7 @@ const HeroSection = () => {
       </HeroBg>
       <HeroContent>
         <h1 className="h1-hero">
-          <span class="h1.text">Finding the Fergal </span>
+          <span class="h1.text">Finding the </span>
           <span class="text-info">Possible </span>
           <span class="inthe">In Im</span>
           <span class="text-info">possible</span>
