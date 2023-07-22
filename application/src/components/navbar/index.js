@@ -8,7 +8,6 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
-  NavLinks,
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
@@ -25,8 +24,8 @@ export const Navbar = ({ toggle }) => {
   };
 
   useEffect(() => {
-      window.addEventListener('scroll', changeNav);      
-  }, [])
+    window.addEventListener('scroll', changeNav);      
+  }, []);
 
   return (
     <>
@@ -40,37 +39,36 @@ export const Navbar = ({ toggle }) => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-            <NavLinks onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-    Home
-  </NavLinks>
+            <Link to="/" style={{ color: "#fff", padding: "25px",textAlign: "center", display: "inline-block", textDecoration: "none", transition: "all 0.2s ease-in-out" }}>
+                Home
+              </Link>
             </NavItem>
-            
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+            <Link to="about" style={{ color: "#fff", padding: "25px",textAlign: "center", display: "inline-block", textDecoration: "none", transition: "all 0.2s ease-in-out" }}>
+                About
+              </Link>
             </NavItem>
-
             <NavItem>
-              <NavLinks to="services">Services</NavLinks>
+              <Link to="services" style={{ color: "#fff", padding: "25px",textAlign: "center", display: "inline-block", textDecoration: "none", transition: "all 0.2s ease-in-out"  }}>
+                Services
+              </Link>
             </NavItem>
-
             <NavItem>
-              <NavLinks to="discover">Insights</NavLinks>
+              <Link to="discover" style={{ color: "#fff", padding: "25px",textAlign: "center", display: "inline-block", textDecoration: "none", transition: "all 0.2s ease-in-out"  }}>
+                Insights
+              </Link>
             </NavItem>
-
             <NavItem>
-              <Link to="/Blogs">Blogs</Link>
+            <Link to="/Blogs" style={{ color: "#fff", padding: "25px", textAlign: "center", display: "inline-block", textDecoration: "none", transition: "all 0.2s ease-in-out" }}>
+                Latest News
+              </Link>
             </NavItem>
-
           </NavMenu>
-
           <NavBtn>
             <NavBtnLink to="/contact-form">Contact Us</NavBtnLink>
           </NavBtn>
-          
         </NavbarContainer>
       </Nav>
-      
     </>
   );
-  
 };
