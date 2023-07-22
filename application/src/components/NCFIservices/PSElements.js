@@ -1,6 +1,13 @@
 import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
+export const MasterContainer = styled.div`
+    padding-top: 30px;
+    padding-bottom: 15px;
+    `;
+
+
+
 export const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;

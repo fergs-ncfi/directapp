@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+
 import {
   HeroContainer,
   HeroBg,
   VideoBg,
   HeroContent,
+  MasterContainer,
   HeroBtnWrapper,
   ArrowForward,
   ArrowRight,
@@ -18,6 +20,7 @@ import ServicesSection from '../NCFIservices/ServicesSection';
 const PageServices = () => {
   return (
     <>
+    <MasterContainer>
       <HeroContainer>
         <HeroBg>
           <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
@@ -46,7 +49,7 @@ const PageServices = () => {
       {/* Add sections for "Protect," "Response," and "Recover" here */}
       
       {/* Additional content specific to PageServices */}
-
+      </MasterContainer>
 
     </>
   );
