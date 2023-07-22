@@ -8,6 +8,7 @@ import {
   MobileIcon,
   NavMenu,
   NavItem,
+  NavBlogsLink,
   NavBtn,
   NavBtnLink,
 } from "./NavbarElements";
@@ -38,31 +39,22 @@ export const Navbar = ({ toggle }) => {
             <FaBars />
           </MobileIcon>
           <NavMenu>
-            <NavItem>
-            <Link to="/" style={{ color: "#fff", padding: "25px",textAlign: "center", display: "inline-block", textDecoration: "none", transition: "all 0.2s ease-in-out" }}>
-                Home
-              </Link>
+           <NavItem>
+            <NavBlogsLink to="/">Home</NavBlogsLink>
             </NavItem>
             <NavItem>
-            <Link to="about" style={{ color: "#fff", padding: "25px",textAlign: "center", display: "inline-block", textDecoration: "none", transition: "all 0.2s ease-in-out" }}>
-                About
-              </Link>
+            <NavBlogsLink to="/NCFIservices">Services</NavBlogsLink>
             </NavItem>
             <NavItem>
-              <Link to="services" style={{ color: "#fff", padding: "25px",textAlign: "center", display: "inline-block", textDecoration: "none", transition: "all 0.2s ease-in-out"  }}>
-                Services
-              </Link>
+            <NavBlogsLink to="/about">About</NavBlogsLink>
             </NavItem>
             <NavItem>
-              <Link to="discover" style={{ color: "#fff", padding: "25px",textAlign: "center", display: "inline-block", textDecoration: "none", transition: "all 0.2s ease-in-out"  }}>
-                Insights
-              </Link>
+            <NavBlogsLink to="/insights">Insights</NavBlogsLink>
             </NavItem>
             <NavItem>
-            <Link to="/Blogs" style={{ color: "#fff", padding: "25px", textAlign: "center", display: "inline-block", textDecoration: "none", transition: "all 0.2s ease-in-out" }}>
-                Latest News
-              </Link>
+            <NavBlogsLink to="/Blogs">Latest News</NavBlogsLink>
             </NavItem>
+            
           </NavMenu>
           <NavBtn>
             <NavBtnLink to="/contact-form">Contact Us</NavBtnLink>

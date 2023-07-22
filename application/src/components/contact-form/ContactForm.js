@@ -1,6 +1,6 @@
 import React from 'react'
 
-document.body.style.backgroundColor = "#000116";
+document.body.style.backgroundColor = "#000116"; 
 const ContactForm = () => {
   const [formStatus, setFormStatus] = React.useState('Send')
 

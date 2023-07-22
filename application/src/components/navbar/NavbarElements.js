@@ -1,6 +1,22 @@
 import styled from 'styled-components';
 import { Link as LinkR } from 'react-router-dom';
-import { Link as LinkS } from 'react-scroll';
+
+
+
+export const NavBlogsLink = styled(LinkR)`
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: #57DFF7;
+  }
+`;
+
+
 
 export const Nav = styled.nav`
     background: ${({ scrollNav }) => (scrollNav ? '#000116' : 'transparent')};
@@ -77,26 +93,12 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
     height: 80px;
+    
 `;
 
-export const NavLinks = styled(LinkS)`
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
 
-    &.active {
-        border-bottom: 3px solid #5EC7CD;
-    }
 
-    &:hover {
-        color: #57DFF7;
-    }
-`;
+
 
 export const NavBtn = styled.nav`
     display: flex;
