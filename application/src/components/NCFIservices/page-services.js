@@ -1,4 +1,4 @@
-import React from 'react';
+import {React,useState, useEffect} from 'react';
 import styled from 'styled-components';
 import {ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP} from "./ServicesElements";
 import Icon1 from "../../images/consult1.svg"
@@ -28,6 +28,23 @@ document.body.style.backgroundColor = "#000116";
 
 
 const PageServices = () => {
+  const [showServices, setShowServices] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const servicesSection = document.getElementById('services-section');
+      if (servicesSection) {
+        const { top } = servicesSection.getBoundingClientRect();
+        setShowServices(top < 0);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
     <MasterContainer>
@@ -87,7 +104,7 @@ const PageServices = () => {
     {/*                       Protect                            */}
     <ServicesContainer id="Protect">
       <ServicesH1>Protect:</ServicesH1>
-      <ServicesH2>Understanding Your Environment: </ServicesH2>
+      <ServicesH2>Understanding Your Environment:</ServicesH2>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />

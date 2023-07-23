@@ -8,6 +8,7 @@ justify-content: center;
 align-items: center;
 background: #010606;
 
+
 @media screen and (max-width: 768px) {
     min-height: 1100px;
 }
@@ -26,6 +27,7 @@ export const ServicesWrapper = styled.div`
     align-items: center;
     grid-gap: 16px;
     padding: 20px 50px;
+    
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;

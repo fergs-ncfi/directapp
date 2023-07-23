@@ -8,6 +8,8 @@ const ServicesContainer = styled.div`
   justify-content: center;
   align-items: center;
   height: 100px;
+  
+  
 `;
 
 const ServicesWrapper = styled.div`
