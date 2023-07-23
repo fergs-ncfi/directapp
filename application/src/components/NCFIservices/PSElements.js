@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { MdKeyboardArrowRight, MdArrowForward } from "react-icons/md";
 
 export const MasterContainer = styled.div`
-    padding-top: 30px;
-    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 10px;
     `;
 
 
@@ -87,13 +87,12 @@ export const ServicesSection = styled.div`
 `;
 
 export const IdentifySection = styled.div`
-  background: #5EC7CD;
+  background: #000116;
   justify-content: left;
   align-items: center;
   display: flex;
   height: 50px;
   color: #000;
-  padding: 30px 0;
 `;
 
 export const IdentifyTitle = styled.h1`
