@@ -87,7 +87,7 @@ const PageServices = () => {
     {/*                       Protect                            */}
     <ServicesContainer id="Protect">
       <ServicesH1>Protect:</ServicesH1>
-      <ServicesH2>Understanding Your Environment:</ServicesH2>
+      <ServicesH2>Understanding Your Environment: </ServicesH2>
       <ServicesWrapper>
         <ServicesCard>
           <ServicesIcon src={Icon1} />
