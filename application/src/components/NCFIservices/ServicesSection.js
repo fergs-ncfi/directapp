@@ -14,6 +14,11 @@ const ServicesWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   width: 600px;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+  max-width: 600px;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -23,6 +28,7 @@ const ServicesWrapper = styled.div`
 const ServiceLink = styled(Link)`
   color: #000; /* Change the text color to black */
   text-decoration: none;
+  display: flex;
   font-size: 18px;
   font-weight: bold;
   padding: 10px 20px;

@@ -81,20 +81,27 @@ export const ArrowRight = styled(MdKeyboardArrowRight)`
 // New Styled Components for ServicesSection and IdentifySection
 export const ServicesSection = styled.div`
   background: #000116;
+  display: flex;
   color: #fff;
   padding: 100px 0;
 `;
 
 export const IdentifySection = styled.div`
   background: #5EC7CD;
+  justify-content: left;
+  align-items: center;
+  display: flex;
   height: 50px;
   color: #000;
-  padding: 100px 0;
+  padding: 30px 0;
 `;
 
 export const IdentifyTitle = styled.h1`
   color: #fff;
+  display: flex;
   height: 50px;
+  justify-content: center;
+  align-items: center;
   font-size: 34px;
   font-weight: bold;
   text-align: center;
