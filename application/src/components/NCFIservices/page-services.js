@@ -152,8 +152,67 @@ const PageServices = () => {
     </ServicesContainer>
 
       {/*                       Detect                            */}
-      <ServicesContainer id="Identify">
+      <ServicesContainer id="Detect">
       <ServicesH1>Detect:</ServicesH1>
+      <ServicesH2>Understanding Your Environment:</ServicesH2>
+      <ServicesWrapper>
+        <ServicesCard>
+          <ServicesIcon src={Icon1} />
+          <ServicesH2>Consultancy Services</ServicesH2>
+          <ServicesP>
+          Engage Professional Consultants With Years Of Industry Experience
+          </ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon2} />
+          <ServicesH2>Vulnerability Management</ServicesH2>
+          <ServicesP>
+          Identify, Contextualise and Remediate Vulnerabilities Within Your Environment
+          </ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon3} />
+          <ServicesH2>Managed Detection & Response</ServicesH2>
+          <ServicesP>
+          Defend against the most sophisticated malware threats with the most advanced solutions
+          </ServicesP>
+        </ServicesCard>
+      </ServicesWrapper>
+    </ServicesContainer>
+
+
+      {/*                       Respond                            */}
+      <ServicesContainer id="Respond">
+      <ServicesH1>Respond:</ServicesH1>
+      <ServicesH2>Understanding Your Environment:</ServicesH2>
+      <ServicesWrapper>
+        <ServicesCard>
+          <ServicesIcon src={Icon1} />
+          <ServicesH2>Consultancy Services</ServicesH2>
+          <ServicesP>
+          Engage Professional Consultants With Years Of Industry Experience
+          </ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon2} />
+          <ServicesH2>Vulnerability Management</ServicesH2>
+          <ServicesP>
+          Identify, Contextualise and Remediate Vulnerabilities Within Your Environment
+          </ServicesP>
+        </ServicesCard>
+        <ServicesCard>
+          <ServicesIcon src={Icon3} />
+          <ServicesH2>Managed Detection & Response</ServicesH2>
+          <ServicesP>
+          Defend against the most sophisticated malware threats with the most advanced solutions
+          </ServicesP>
+        </ServicesCard>
+      </ServicesWrapper>
+    </ServicesContainer>
+
+      {/*                       Recover                            */}
+      <ServicesContainer id="Recover">
+      <ServicesH1>Recover:</ServicesH1>
       <ServicesH2>Understanding Your Environment:</ServicesH2>
       <ServicesWrapper>
         <ServicesCard>
