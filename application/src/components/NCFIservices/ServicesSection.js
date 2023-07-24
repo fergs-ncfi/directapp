@@ -3,13 +3,18 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const ServicesContainer = styled.div`
-  background: #fff; /* Change the background color to white */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-  
-  
+position: sticky;
+top: 0;
+background: #fff; /* Change the background color to white */
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100px;
+z-index: 10;
+
+@media screen and (max-width: 768px) {
+  top: 80px; /* Adjust this value to make it appear below the Navbar on mobile */
+}
 `;
 
 const ServicesWrapper = styled.div`
@@ -28,7 +33,8 @@ const ServicesWrapper = styled.div`
 `;
 
 const ServiceLink = styled(Link)`
-  color: #000; /* Change the text color to black */
+
+color: #000; /* Change the text color to black */
   text-decoration: none;
   display: flex;
   font-size: 18px;
@@ -52,6 +58,7 @@ const ServicesSection = () => {
         <ServiceLink to="#">Recover</ServiceLink>
       </ServicesWrapper>
     </ServicesContainer>
+    
   );
 };
 

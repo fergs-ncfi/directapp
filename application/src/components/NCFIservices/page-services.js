@@ -23,31 +23,17 @@ import {
 import Video from '../../videos/bgvideo.mp4';
 import '../../App.css';
 import ServicesSection from '../NCFIservices/ServicesSection';
+import Sidebar from './Sidebar'; // Import the Sidebar component
 
 document.body.style.backgroundColor = "#000116";
 
 
 const PageServices = () => {
-  const [showServices, setShowServices] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const servicesSection = document.getElementById('services-section');
-      if (servicesSection) {
-        const { top } = servicesSection.getBoundingClientRect();
-        setShowServices(top < 0);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <>
     <MasterContainer>
+      
       <HeroContainer>
         <HeroBg>
           <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
@@ -238,6 +224,8 @@ const PageServices = () => {
         </ServicesCard>
       </ServicesWrapper>
     </ServicesContainer>
+
+    <Sidebar/>
 
 
     </>

@@ -79,6 +79,7 @@ export const ServicesH1 = styled.h1`
     @media screen and (max-width: 480px) {
         font-size: 2rem;
     }
+  
 
 `
 
@@ -88,12 +89,7 @@ color: #FFF;
 margin-bottom: 10px;
 font-weight: 900;
 text-align: center;
-&:hover {
-    transform: scale(1.22);
-    text-decoration: underline;
-    font-weight: bold;
-    display: inline-block
-}
+
 `
 
 export const ServicesP = styled.p`
