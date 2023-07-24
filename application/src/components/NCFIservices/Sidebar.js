@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { animateScroll as scroll } from 'react-scroll';
+
 
 const SidebarContainer = styled.div`
   position: fixed;
@@ -30,6 +32,19 @@ color: ${({ isHovered }) => (isHovered ? 'transparent' : '#57DFF7')};
   }
 `;
 
+
+const SidebarItemLink = styled(Link)`
+  color: #57dff7; /* Set the text color to white */
+  text-decoration: none;
+  position: relative;
+
+  &:hover {
+    text-decoration: underline;
+    color: #57dff7;
+    
+  }
+`;
+
 const SidebarItemExpanded = styled.div`
   color: #57dff7;
   font-size: 18px;
@@ -45,46 +60,64 @@ const Sidebar = () => {
     setIsHovered((prev) => !prev);
   };
 
+   const handleScrollTo = (elementId) => {
+    scroll.scrollTo(`#${elementId}`, {
+        duration: 200,
+        offset: -0, // Adjust the offset based on your layout
+        smooth: true,
+      });
+    };
+
+
   return (
     <SidebarContainer onMouseEnter={handleHover} onMouseLeave={handleHover}>
-      <SidebarItem to="/Identify" isHovered={isHovered}>
+
+        
+      <SidebarItem to="/NCFIservices#Identify" isHovered={isHovered}>
         I
       </SidebarItem>
-      <SidebarItemExpanded isHovered={isHovered}>
-        Identify
+      <SidebarItemExpanded 
+      isHovered={isHovered}
+      onClick={() => handleScrollTo("Identify")}
+      >
+      <SidebarItemLink to="/NCFIservices#Identify">Identify</SidebarItemLink>
       </SidebarItemExpanded>
 
 
-      <SidebarItem to="/Protect" isHovered={isHovered}>
+
+      <SidebarItem to="/NCFIservices#Protect" isHovered={isHovered}>
         P
       </SidebarItem>
-      <SidebarItemExpanded isHovered={isHovered}>
-        Protect
+      <SidebarItemExpanded 
+      isHovered={isHovered}
+      onClick={() => handleScrollTo('Protect')}>
+      <SidebarItemLink to="/NCFIservices#Protect">Protect</SidebarItemLink>
       </SidebarItemExpanded>
 
-      <SidebarItem to="#" isHovered={isHovered}>
+
+      <SidebarItem to="/NCFIservices#Detect" isHovered={isHovered}>
         D
       </SidebarItem>
       <SidebarItemExpanded isHovered={isHovered}>
-        Detect
+      <SidebarItemLink to="/NCFIservices#Detect">Detect</SidebarItemLink>
       </SidebarItemExpanded>
+      
 
-      <SidebarItem to="#" isHovered={isHovered}>
+      <SidebarItem to="/NCFIservices#Respond" isHovered={isHovered}>
         R
       </SidebarItem>
       <SidebarItemExpanded isHovered={isHovered}>
-        Respond
+      <SidebarItemLink to="/NCFIservices#Respond">Respond</SidebarItemLink>
       </SidebarItemExpanded>
 
-      <SidebarItem to="#" isHovered={isHovered}>
+
+
+      <SidebarItem to="/NCFIservices#Recover" isHovered={isHovered}>
         R
       </SidebarItem>
       <SidebarItemExpanded isHovered={isHovered}>
-        Recover
+      <SidebarItemLink to="/NCFIservices#Recover">Recover</SidebarItemLink>
       </SidebarItemExpanded>
-
-
-
 
       {/* Add other links as needed */}
     </SidebarContainer>

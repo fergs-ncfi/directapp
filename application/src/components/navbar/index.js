@@ -46,7 +46,7 @@ export const Navbar = ({ toggle }) => {
             <NavBlogsLink to="/NCFIservices">Services</NavBlogsLink>
             </NavItem>
             <NavItem>
-            <NavBlogsLink to="/about">About</NavBlogsLink>
+            <NavBlogsLink to="/About">About</NavBlogsLink>
             </NavItem>
             <NavItem>
             <NavBlogsLink to="/insights">Insights</NavBlogsLink>

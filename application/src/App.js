@@ -7,6 +7,11 @@ import ContactForm from "./components/contact-form/ContactForm.js";
 import Layout from "./components/Layout/Layout.js";
 import Blogs from './components/Blogs/Blogs.js';
 import PageServices from './components/NCFIservices/page-services';
+import InfoSection from './components/About/index.js';
+
+
+
+
 
 function App() {
   return (
@@ -17,6 +22,7 @@ function App() {
         <Route path="/contact-form" component={ContactForm} exact />
         <Route path="/Blogs" component={Blogs} exact />
         <Route path="/NCFIservices" component={PageServices} exact />
+        <Route path="/About" component={InfoSection} exact />
         {/* Add other routes for your different pages */}
       </Switch>
     </Layout>
