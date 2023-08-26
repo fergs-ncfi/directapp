@@ -18,7 +18,7 @@ const AboutContent = styled.div`
   padding: 20px;
   text-align: center;
   background-color: #FFF;
-  border-radius: 5px;
+  border-radius: px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #000116;
 `;
@@ -30,6 +30,33 @@ const Title = styled.h1`
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 `;
+
+export const InfoContainer = styled.div `
+    width: 100%;
+    min-height: 800px;    
+    height: 800px;
+    justify-content: center;  
+    display: flex;
+
+`
+
+export const InfoWrapper = styled.div `
+    display: flex;
+    padding: 80px 0;
+    width: 1200px;
+    justify-content: center;
+    align-items: center;
+
+`
+
+
+export const Subtitle = styled.h5 `
+    color: #B05FFD;
+    font-weight: 500;
+    text-transform: uppercase;
+
+`
+
 
 
 
@@ -44,6 +71,7 @@ const About = () => {
         Our mission is to ensure the continued security of our clients by recognising the challenges they face and building leading solutions to mitigate those risks. With a focus on innovation, collaboration, and client satisfaction, we are committed to delivering world-class security solutions that enable our clients to operate with confidence and peace of mind."
         btnText="Contact Us"
       />
+      
   );
 };
 

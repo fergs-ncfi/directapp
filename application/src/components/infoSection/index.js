@@ -16,11 +16,13 @@ export const InfoSection = ({ id, title, subtitle, text, image, btnText }) => {
               <Subtitle>{subtitle}</Subtitle>
               <Title className="text-info mb-6">{title}</Title>
               <p className="text-white mb-4">{text}</p>
+              <div className="mt-4"></div> {/* Add some space here */}
               <ButtonBasic to="" primary="true" dark="true" className="mx-auto">
                 {btnText}
               </ButtonBasic>
+              <div className="mt-4"></div> {/* Add some space here */}
             </div>
-            <div className="col-lg-6 col-sm-12 img-wrap">
+            <div className="col-lg-5 col-sm-12 img-wrap justify-content-center">
               <img src={image} alt="" className="fit-img"></img>
             </div>
           </div>
